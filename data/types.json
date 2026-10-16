@@ -1,0 +1,323 @@
+{
+  "generatedAt": "2026-10-16T14:45:36.377Z",
+  "name": "The Face Analysis face, eye, lip and nose types",
+  "methodology": {
+    "url": "https://thefaceanalysis.com/methodology",
+    "lastChanged": "2026-10-16"
+  },
+  "reference": {
+    "page": "https://thefaceanalysis.com/face-measurement-statistics",
+    "n": 102,
+    "measuredOn": "2026-10-06",
+    "note": "Counts show how the detector splits the reference set, not how common a type is in the population.",
+    "thresholds": "https://thefaceanalysis.com/data/reference-set.json"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "categories": {
+    "face": {
+      "hub": "https://thefaceanalysis.com/face-shape",
+      "tool": "https://thefaceanalysis.com/face-shape-detector",
+      "types": [
+        {
+          "slug": "diamond",
+          "name": "Diamond",
+          "page": "https://thefaceanalysis.com/face-shape/diamond",
+          "definition": "A diamond face is widest at the cheekbones and tapers in both directions: a narrow forehead above, a narrow chin below. It is the least common of the seven and the one most often misread as heart or oval.",
+          "howMeasured": "Both ends of the face are narrower than the middle: the temples measure no more than 93.4 per cent of cheekbone width and the jaw no more than 79.6 per cent. The widest point sits at the cheekbones with nothing above or below coming close to it. The test checks this only after ruling out oblong, triangle, round, square and heart, so a face that meets one of those first gets that label instead.",
+          "referenceCount": 9,
+          "referenceShare": 0.088
+        },
+        {
+          "slug": "oval",
+          "name": "Oval",
+          "page": "https://thefaceanalysis.com/face-shape/oval",
+          "definition": "An oval face is longer than it is wide, with a jaw that curves rather than corners. It is the most commonly assigned shape, partly because it is genuinely frequent and partly because it is where borderline measurements land.",
+          "howMeasured": "Oval is the shape that remains when none of the six narrower conditions holds: the face is not long enough to be oblong (length under 1.23 times cheekbone width), the jaw tapers enough not to read round, square or triangle, and the forehead and jaw are too balanced for heart or diamond. That makes it a balanced proportion rather than a single threshold, and the most common result. Charts that quote 1.5 or 1.6 measure length from the hairline, which a photo landmark cannot see; this test measures from the top of the forehead, so its numbers run lower and its cut points are calibrated to its own measurements.",
+          "referenceCount": 38,
+          "referenceShare": 0.373
+        },
+        {
+          "slug": "round",
+          "name": "Round",
+          "page": "https://thefaceanalysis.com/face-shape/round",
+          "definition": "A round face is close to as wide as it is long, with a soft jawline and full cheeks. It is frequently confused with square, and the measurement that separates them is jaw definition rather than proportion.",
+          "howMeasured": "Face length is no more than 1.16 times cheekbone width and the jaw carries at least 79.1 per cent of that width — a short face with little taper toward the chin. Charts that quote 1.5 or 1.6 measure length from the hairline, which a photo landmark cannot see; this test measures from the top of the forehead, so its numbers run lower and its cut points are calibrated to its own measurements.",
+          "referenceCount": 13,
+          "referenceShare": 0.127
+        },
+        {
+          "slug": "heart",
+          "name": "Heart",
+          "page": "https://thefaceanalysis.com/face-shape/heart",
+          "definition": "A heart face is widest at the forehead and tapers to a narrow, often pointed chin. A widow's peak is common but not required — the shape is defined by the forehead-to-jaw ratio, not the hairline.",
+          "howMeasured": "Forehead width, measured at the temples, is at least 23.9 per cent greater than jaw width — the face carries its width high and narrows clearly to the chin. The cheekbones are still the widest single point on almost every face, so heart is defined by how far the jaw falls below the forehead rather than by the forehead being widest.",
+          "referenceCount": 12,
+          "referenceShare": 0.118
+        },
+        {
+          "slug": "square",
+          "name": "Square",
+          "page": "https://thefaceanalysis.com/face-shape/square",
+          "definition": "A square face has a jaw nearly as wide as the cheekbones and a defined angle where the jaw turns. Forehead, cheekbones and jaw sit close in width, giving the face a straight-sided outline.",
+          "howMeasured": "The three widths sit close together: the jaw measures at least 79.6 per cent of cheekbone width and the forehead is no more than 15.8 per cent wider than the jaw, on a face too long to read round. A jaw that wide against the cheekbones is what reads as a strong, straight-sided lower face.",
+          "referenceCount": 10,
+          "referenceShare": 0.098
+        },
+        {
+          "slug": "oblong",
+          "name": "Oblong",
+          "page": "https://thefaceanalysis.com/face-shape/oblong",
+          "definition": "An oblong face is a long rectangle: the three widths are similar, and the length is what sets it apart. It is often called long face, and the styling problem is always the same — reduce apparent height, add width.",
+          "howMeasured": "Face length is at least 1.23 times cheekbone width — the long end of the range this test measures — and it is the first condition checked, so a long face is called oblong whatever its widths do. Charts that quote 1.5 or 1.6 measure length from the hairline, which a photo landmark cannot see; this test measures from the top of the forehead, so its numbers run lower and its cut points are calibrated to its own measurements.",
+          "referenceCount": 10,
+          "referenceShare": 0.098
+        },
+        {
+          "slug": "triangle",
+          "name": "Triangle",
+          "page": "https://thefaceanalysis.com/face-shape/triangle",
+          "definition": "A triangle face — sometimes called pear-shaped — is widest at the jaw and narrowest at the forehead. It is the inverse of a heart face and needs the opposite styling.",
+          "howMeasured": "The jaw measures at least 79.4 per cent of cheekbone width and the forehead is no more than 12.5 per cent wider than the jaw — the lower face carries nearly as much width as the upper. Textbook charts describe the jaw as wider than the forehead; in photo landmarks the cheekbones are the widest point on almost every face, so the measurable version is a jaw that comes unusually close to the forehead.",
+          "referenceCount": 10,
+          "referenceShare": 0.098
+        }
+      ]
+    },
+    "eye": {
+      "hub": "https://thefaceanalysis.com/eye-shape",
+      "tool": "https://thefaceanalysis.com/eye-shape-detector",
+      "types": [
+        {
+          "slug": "hooded",
+          "name": "Hooded",
+          "page": "https://thefaceanalysis.com/eye-shape/hooded",
+          "definition": "A hooded eye has a fold of skin from the brow bone that drops over the crease, so little or none of the mobile lid shows when the eye is open. It is the most searched eye shape by a wide margin, and the most often confused with two other things: a monolid, and a drooping upper lid that is actually ptosis.",
+          "howMeasured": "The band between your lash line and the ring of landmarks just above it — where the crease sits — measured against your eye width. On a hooded eye that band falls below about a fifth of the eye's width, because the brow-bone skin folds down over it. Two limits come with that number. It is the average of both eyes, so a hood that is heavier on one side shows up only as a lower overall figure, not as a left-right difference. And a monolid produces the same low reading, because the landmarks see that no lid space shows but not whether a crease is hidden or absent — the closed-eye step in the mirror test below is what separates them.",
+          "detectableFromFrontPhoto": true,
+          "referenceCount": 13,
+          "referenceShare": 0.127
+        },
+        {
+          "slug": "almond",
+          "name": "Almond",
+          "page": "https://thefaceanalysis.com/eye-shape/almond",
+          "definition": "An almond eye is longer than it is tall, tapers at both corners, and has a visible crease with the iris slightly touched by the upper and lower lids. It is the shape most beauty writing treats as the default, which is why so much advice reads as though every other shape needs correcting toward it.",
+          "howMeasured": "Eye height divided by eye width, with a visible crease and a mild upward tilt. An almond eye sits below roughly 0.36 on that ratio — longer than it is tall — and tapers to a point at both corners.",
+          "detectableFromFrontPhoto": true,
+          "referenceCount": 49,
+          "referenceShare": 0.48
+        },
+        {
+          "slug": "monolid",
+          "name": "Monolid",
+          "page": "https://thefaceanalysis.com/eye-shape/monolid",
+          "definition": "A monolid is an upper lid without a crease, so the lid runs in one smooth plane from lash line to brow bone. It is a common and entirely ordinary variation, most frequent in people of East and Southeast Asian descent, and it is regularly mislabelled as a hooded eye by tools and guides that only look at whether lid space is visible.",
+          "howMeasured": "Not measurable from a front-facing photo, and this page says so rather than guessing. A monolid is defined by the absence of a crease. Landmark geometry can see that no lid space is visible, but it cannot tell a crease that is missing from a crease that is covered — the two produce the same measurement. The mirror test below is what separates them.",
+          "detectableFromFrontPhoto": false,
+          "referenceCount": null,
+          "referenceShare": null
+        },
+        {
+          "slug": "deep-set",
+          "name": "Deep-set",
+          "page": "https://thefaceanalysis.com/eye-shape/deep-set",
+          "definition": "Deep-set eyes sit further back in the socket, so the brow bone projects over them and casts a natural shadow across the lid. The result looks similar to hooding from the front, which is why the two are so often mixed up — but the cause is bone depth rather than a skin fold.",
+          "howMeasured": "A depth trait, and a front-facing photo cannot measure depth reliably. MediaPipe reports a z coordinate, but it is relative to the camera and not on the same scale as x and y, so using it to say how far back the eye sits would be a number with no meaning. The profile test below is the honest method.",
+          "detectableFromFrontPhoto": false,
+          "referenceCount": null,
+          "referenceShare": null
+        },
+        {
+          "slug": "downturned",
+          "name": "Downturned",
+          "page": "https://thefaceanalysis.com/eye-shape/downturned",
+          "definition": "A downturned eye has an outer corner that sits level with or below the inner corner, giving a soft, slightly droopy line. It is the visible form of a negative or neutral canthal tilt, and it is the eye trait the looksmaxing community has made the most noise about — usually with more confidence than the underlying evidence supports.",
+          "howMeasured": "The angle of the line from the inner corner to the outer corner, in degrees. In a 102-adult research set measured with this test, the middle 80% of faces sat between +1.3° and +6.0° (median +3.7°). A downturned eye reads at or below zero — the outer corner sits level with or under the inner corner. This is the same measurement as canthal tilt.",
+          "detectableFromFrontPhoto": true,
+          "referenceCount": 4,
+          "referenceShare": 0.039
+        },
+        {
+          "slug": "upturned",
+          "name": "Upturned",
+          "page": "https://thefaceanalysis.com/eye-shape/upturned",
+          "definition": "An upturned eye has an outer corner sitting clearly above the inner corner, producing a natural lift at the end of the eye. It is what a cat-eye liner imitates, which is why the shape needs less of it than any other.",
+          "howMeasured": "The same inner-corner-to-outer-corner angle as downturned, read from the other end of the scale. From +5°, the cut point where this site's canthal tilt test starts calling a tilt positive, the eye reads as upturned.",
+          "detectableFromFrontPhoto": true,
+          "referenceCount": 22,
+          "referenceShare": 0.216
+        },
+        {
+          "slug": "round",
+          "name": "Round",
+          "page": "https://thefaceanalysis.com/eye-shape/round",
+          "definition": "A round eye is nearly as tall as it is wide, with a curved rather than tapered outer corner, and usually some visible white above or below the iris. It reads as open and expressive, and it is the shape most often mistaken for merely large eyes.",
+          "howMeasured": "Eye height divided by eye width, at or above roughly 0.36. A round eye is close enough to as tall as it is wide that white shows above or below the iris when you look straight ahead.",
+          "detectableFromFrontPhoto": true,
+          "referenceCount": 14,
+          "referenceShare": 0.137
+        },
+        {
+          "slug": "wide-set",
+          "name": "Wide-set",
+          "page": "https://thefaceanalysis.com/eye-shape/wide-set",
+          "definition": "Wide-set eyes have clearly more than one eye's width of space between them. It is a spacing measurement rather than a shape one, which is why it can pair with any outline — an eye can be wide-set and almond, wide-set and round, wide-set and hooded.",
+          "howMeasured": "The distance between your inner corners divided by the average width of one eye. The drawing rule says one eye-width of gap, but measured faces sit a little above it, so this test reads above 1.27 as wide-set.",
+          "detectableFromFrontPhoto": true,
+          "referenceCount": 14,
+          "referenceShare": 0.137
+        },
+        {
+          "slug": "protruding",
+          "name": "Protruding",
+          "page": "https://thefaceanalysis.com/eye-shape/protruding",
+          "definition": "A protruding eye sits forward in the socket, so the lid curves outward over the eyeball and the eye reads prominent from the side. As a lifelong feature it is ordinary anatomy. As a change, it is one of the few eye traits that genuinely warrants a doctor rather than a makeup guide.",
+          "howMeasured": "The opposite depth trait to deep-set, and unmeasurable from the front for the same reason: the face mesh's depth value is camera-relative and not on the same scale as the other two axes. Profile is the honest view.",
+          "detectableFromFrontPhoto": false,
+          "referenceCount": null,
+          "referenceShare": null
+        },
+        {
+          "slug": "close-set",
+          "name": "Close-set",
+          "page": "https://thefaceanalysis.com/eye-shape/close-set",
+          "definition": "Close-set eyes have about one eye's width or less between the inner corners. Like wide-set, it is spacing rather than shape, and it pairs with any outline.",
+          "howMeasured": "The same inner-corner gap divided by average eye width, read from the low end. Below 1.1 eye-widths reads as close-set, which is still about one eye-width: measured faces sit above the drawing rule's 1.0.",
+          "detectableFromFrontPhoto": true,
+          "referenceCount": 13,
+          "referenceShare": 0.127
+        }
+      ]
+    },
+    "lip": {
+      "hub": "https://thefaceanalysis.com/lip-shape",
+      "types": [
+        {
+          "slug": "cupids-bow",
+          "name": "Cupid's bow",
+          "page": "https://thefaceanalysis.com/lip-shape/cupids-bow",
+          "definition": "The Cupid's bow is the double curve along the top edge of your upper lip — two peaks with a dip between them, named after the shape of the bow the Roman god is drawn holding. Everyone has one; what varies is how sharply defined it is.",
+          "howMeasured": "The height of the two peaks above the central dip, measured against mouth width. Above roughly 0.035 of mouth width the bow reads as defined; below that it reads as soft or flat.",
+          "referenceCount": null,
+          "referenceShare": null
+        },
+        {
+          "slug": "thin",
+          "name": "Thin",
+          "page": "https://thefaceanalysis.com/lip-shape/thin",
+          "definition": "Thin lips have a total lip height below roughly 0.28 of mouth width. It is a measurement, and worth saying plainly because most of what is written about it treats it as a problem: nearly every page ranking for this term is selling filler.",
+          "howMeasured": "Total lip height — the top of the upper lip to the bottom of the lower — divided by mouth width. At or below about 0.28 reads as thin; the majority of faces sit between 0.28 and 0.42.",
+          "referenceCount": 12,
+          "referenceShare": 0.118
+        },
+        {
+          "slug": "full",
+          "name": "Full",
+          "page": "https://thefaceanalysis.com/lip-shape/full",
+          "definition": "Full lips have a total lip height above roughly 0.42 of mouth width. Fullness is independent of every other lip measurement — a full pair can have a flat Cupid's bow, downturned corners, or an unbalanced upper-to-lower ratio, and often does.",
+          "howMeasured": "Total lip height divided by mouth width, above about 0.42. The upper-to-lower ratio is measured separately, because fullness says nothing about how the volume is distributed between the two lips.",
+          "referenceCount": 10,
+          "referenceShare": 0.098
+        },
+        {
+          "slug": "heart-shaped",
+          "name": "Heart-shaped",
+          "page": "https://thefaceanalysis.com/lip-shape/heart-shaped",
+          "definition": "Heart-shaped lips have a sharply defined Cupid's bow with pronounced peaks, giving the upper lip the two-lobed outline the name describes. It is the one lip label defined by the border rather than by volume, which is why it can coexist with thin lips or full ones.",
+          "howMeasured": "Cupid's bow peak height against mouth width, above roughly 0.035, together with enough vermilion for the shape to read. The tool reports the bow depth as its own number.",
+          "referenceCount": null,
+          "referenceShare": null
+        },
+        {
+          "slug": "downturned",
+          "name": "Downturned",
+          "page": "https://thefaceanalysis.com/lip-shape/downturned",
+          "definition": "Downturned lips have mouth corners sitting below the centre line of the mouth, giving the resting expression a slight droop. It is the mouth's version of a negative canthal tilt, and like that measurement it is an angle rather than a mood.",
+          "howMeasured": "The angle from the centre of the mouth to each corner, in degrees, averaged over both sides. Below zero means the corners sit lower than the centre — but a relaxed neutral mouth already reads a few degrees below zero, so the tool calls lips downturned only below -6.5°.",
+          "referenceCount": 19,
+          "referenceShare": 0.186
+        },
+        {
+          "slug": "wide",
+          "name": "Wide",
+          "page": "https://thefaceanalysis.com/lip-shape/wide",
+          "definition": "Width is a separate axis from fullness, and confusing the two is the most common mistake in lip charts. A wide mouth with average lip height reads as thin, and a narrow mouth with the same height reads as full — the height did not change.",
+          "howMeasured": "Mouth width against face length. A classic reference places the mouth corners roughly below the inner edges of the irises — a check to do in the mirror. The test calculates the width ratio but does not label a mouth wide or narrow.",
+          "referenceCount": null,
+          "referenceShare": null
+        }
+      ]
+    },
+    "nose": {
+      "hub": "https://thefaceanalysis.com/nose-shape",
+      "types": [
+        {
+          "slug": "roman",
+          "name": "Roman",
+          "page": "https://thefaceanalysis.com/nose-shape/roman",
+          "definition": "A Roman nose has a bridge that curves outward — a raised ridge along the dorsum rather than a straight line from the brow to the tip. Aquiline is the same nose under a different name, from the Latin for eagle, and hawk nose — or hooked nose in everyday speech — is the term for a pronounced version with a downward-angled tip. ‘Hooked’ has also been used as a caricature of particular ethnic groups, which is a good reason to describe the profile by its anatomy rather than by the label.",
+          "definingTrait": "A convex dorsal line. The bridge rises into a hump partway down and the tip often sits slightly lower than the hump, giving the profile its curve.",
+          "referenceCount": null,
+          "referenceShare": null
+        },
+        {
+          "slug": "button",
+          "name": "Button",
+          "page": "https://thefaceanalysis.com/nose-shape/button",
+          "definition": "A button nose is short and small relative to the face, with a rounded tip and a bridge that does not project much. It is the one nose shape on this page with a partly front-measurable definition — shortness and narrowness both show from the front, even though tip projection does not.",
+          "definingTrait": "Short length relative to width, a small alar base, and a rounded rather than defined tip. The measured signal is a length-to-width ratio at the low end, roughly 1.15 or below.",
+          "referenceCount": null,
+          "referenceShare": null
+        },
+        {
+          "slug": "greek",
+          "name": "Greek",
+          "page": "https://thefaceanalysis.com/nose-shape/greek",
+          "definition": "A Greek nose has a straight bridge — a dorsal line running from the brow to the tip with no hump and no dip. The name comes from classical Greek sculpture, where the profile was idealised rather than portrayed, which is a meaningful difference from how the Roman nose got its name.",
+          "definingTrait": "A straight dorsal line in profile, with the bridge continuing from the forehead at a shallow angle and no convexity or concavity along it.",
+          "referenceCount": null,
+          "referenceShare": null
+        },
+        {
+          "slug": "bulbous",
+          "name": "Bulbous",
+          "page": "https://thefaceanalysis.com/nose-shape/bulbous",
+          "definition": "A bulbous nose has a tip that is round and wide relative to the bridge above it. It is one of the two shapes here with a partly front-measurable definition, and it is also the one with a genuine medical neighbour — a tip that has become progressively larger and thickened is a different finding from a tip that has always been round.",
+          "definingTrait": "Tip width disproportionate to bridge width. The underlying cause is usually the shape and springiness of the lower lateral cartilages together with skin thickness, rather than size alone.",
+          "referenceCount": null,
+          "referenceShare": null
+        },
+        {
+          "slug": "snub",
+          "name": "Snub",
+          "page": "https://thefaceanalysis.com/nose-shape/snub",
+          "definition": "A snub nose is short with a tip that rotates upward, so the nostrils become more visible from the front than usual. Upturned and celestial are the same shape described more kindly; the traits are identical and only the connotation differs.",
+          "definingTrait": "Tip rotation above the neutral range, combined with short length. Rotation is measured in profile as the angle between the columella and the line of the upper lip.",
+          "referenceCount": null,
+          "referenceShare": null
+        },
+        {
+          "slug": "nubian",
+          "name": "Nubian",
+          "page": "https://thefaceanalysis.com/nose-shape/nubian",
+          "definition": "A Nubian nose is described as long with a wide base and a broad, often downward-projecting tip. The name attaches an ancient African kingdom to a facial feature, which is worth pausing on: this is a description that came out of a tradition of classifying noses by ancestry, and that tradition has a bad history.",
+          "definingTrait": "A wide alar base combined with above-average length — both of which the front-facing tool can measure — and a tip with greater projection, which it cannot.",
+          "referenceCount": null,
+          "referenceShare": null
+        },
+        {
+          "slug": "wide",
+          "name": "Wide",
+          "page": "https://thefaceanalysis.com/nose-shape/wide",
+          "definition": "Width is the one nose property a front-facing photo measures cleanly, and it is the axis every other named shape gets confused with. A nose can be wide and Roman, wide and straight, narrow and bulbous — width is independent of the profile traits that name the other shapes on this page.",
+          "definingTrait": "Alar width against face width. Above roughly 0.28 reads as wide, below roughly 0.22 as narrow, with the majority in between. A second classic reference compares alar width against the distance between the inner eye corners, where the traditional canon puts them at about equal.",
+          "referenceCount": 11,
+          "referenceShare": 0.108
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-10-16T14:45:36.341Z",
+  "page": "https://thefaceanalysis.com/changelog",
+  "methodology": {
+    "url": "https://thefaceanalysis.com/methodology",
+    "lastChanged": "2026-10-16",
+    "revisions": 9
+  },
+  "entries": [
+    {
+      "date": "2026-10-16",
+      "kind": "method",
+      "subject": "Side Profile Analyzer added",
+      "change": "New /side-profile tool measuring from a person-segmentation silhouette instead of Face Mesh: facial convexity (reference band 160–172°), nasofrontal (115–135°), nasolabial (90–115°), mentolabial (110–135°), upper and lower lip to the E-line (−5.5 to −1.5% and −4 to +0.5% of nose-tip-to-chin length) and profile thirds (28–38% each). Photos with a head not turned far enough, an obscured outline or an untraceable contour are refused rather than measured. No existing tool's measurement or threshold changed; no reference faces were involved, so no previous result is affected."
+    },
+    {
+      "date": "2026-10-13",
+      "kind": "data",
+      "subject": "Face, eye, lip and nose types as JSON",
+      "change": "Published /data/types.json: every face, eye, lip and nose type with its definition, how it is measured from a front photo, its page and its count in the 102-face reference set. Types that need a profile view (such as a Roman nose) carry no count. No measurement or threshold changed."
+    },
+    {
+      "date": "2026-10-06",
+      "kind": "data",
+      "subject": "Face measurement statistics",
+      "change": "Published the face measurement statistics page: the 102 reference faces measured across every reading the tools make, as medians, ranges and counts. The score validity figure was recomputed with the current engine (ρ = −0.072). No per-face value or photo is published."
+    },
+    {
+      "date": "2026-10-06",
+      "kind": "method",
+      "subject": "Eye spacing, upturned eyes, long nose",
+      "change": "Three thresholds recalibrated on the reference set. Eye spacing: wide-set from 1.10 to 1.27 and close-set from 0.90 to 1.10 (about the outer 15% each way); with the old values 89 of 102 faces read wide-set and none close-set, now 14 and 13. Upturned eyes from +8° to +5°, the same boundary as positive canthal tilt (1 face to 22). Long nose from 1.45 to 1.28, the 85th percentile (0 faces to 17)."
+    },
+    {
+      "date": "2026-10-06",
+      "kind": "data",
+      "subject": "Reference counts on type pages",
+      "change": "Every face, eye, nose and lip type page now shows how many of the 102 reference faces got that reading, remeasured with the current engine."
+    },
+    {
+      "date": "2026-10-06",
+      "kind": "correction",
+      "subject": "How the site describes photo handling",
+      "change": "The site's one-sentence description was rewritten. The old wording said no photo is uploaded, which is true of the measurement tools only: the AI features (simulations, Face Report, age and look-alike reads) upload the photo the user chooses when they start one. The description now says both, and the same sentence is used on every page."
+    },
+    {
+      "date": "2026-10-06",
+      "kind": "site",
+      "subject": "Payments",
+      "change": "Payments are processed by Whop as merchant of record; the pricing, terms and privacy pages were updated to say so."
+    },
+    {
+      "date": "2026-09-28",
+      "kind": "method",
+      "subject": "Attractiveness score",
+      "change": "The formula is unchanged, but the 1-10 score is now a percentile against the 102 reference faces (1 + 9 × percentile ÷ 100). Before, the 0-100 composite was divided by 10 and 80% of real faces landed between 7.0 and 7.5. The PSL bands were rebuilt on the percentile. The score was tested against 2,513 people's ratings of the same faces: ρ = −0.07, no relationship; the result is published on the tool page."
+    },
+    {
+      "date": "2026-09-28",
+      "kind": "correction",
+      "subject": "Claims removed from tool pages",
+      "change": "Removed statements the measurements did not support: \"most faces score 4-7\", a \"separate reference by sex\" (the tool does not ask for sex), a typical symmetry range of 85-95 and a typical golden ratio range of 70-90."
+    },
+    {
+      "date": "2026-09-15",
+      "kind": "correction",
+      "subject": "Measurement engine: non-square photos",
+      "change": "Fixed an aspect-ratio error. The engine treated horizontal and vertical landmark coordinates as the same unit, so on any non-square photo (such as a 3:4 phone portrait) ratios, tilt angles and symmetry were skewed. Cropping the 102 reference faces to 3:4 changed the face shape of 27 of them before the fix and 11 after (noise)."
+    },
+    {
+      "date": "2026-09-15",
+      "kind": "method",
+      "subject": "Face shape, lip and PD calibration",
+      "change": "Face shape thresholds recalibrated on the 102 reference faces: with the old values heart and oblong never occurred and 30 of 53 men read as triangle; the new split is oval 38, round 13, heart 12, square, triangle and oblong 10 each, diamond 9. The downturned-lip threshold moved from 0° to −6.5° (82 of 102 neutral faces read downturned, now 19). Pupillary distance was about 3 mm low: the iris scale is now corrected by ×1.059, and the stated error band is ±3 mm."
+    },
+    {
+      "date": "2026-09-14",
+      "kind": "correction",
+      "subject": "Canthal tilt",
+      "change": "Tilt is now measured for each eye along the axis between the inner corners, not against the image horizontal. A tilted head had added +θ to one eye and −θ to the other, which showed up as 11-17° of false asymmetry at 6° of head roll. The result card shows each eye. Thresholds: negative below 0°, neutral 0-5°, positive 5° and above."
+    },
+    {
+      "date": "2026-09-07",
+      "kind": "correction",
+      "subject": "Face shape classifier",
+      "change": "The classifier returned \"diamond\" for 9 of 9 real test photos. Forehead width had been measured between the brows; it is now measured at the temples, and the thresholds were set from measured faces instead of a taxonomy that measures length from the hairline."
+    },
+    {
+      "date": "2026-09-02",
+      "kind": "site",
+      "subject": "Launch",
+      "change": "thefaceanalysis.com launched with free measurement tools that run in the browser on a 478-point face mesh."
+    }
+  ]
+}

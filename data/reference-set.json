@@ -1,0 +1,1094 @@
+{
+  "generatedAt": "2026-10-16T14:45:36.381Z",
+  "name": "The Face Analysis reference measurements: 102 adult faces",
+  "page": "https://thefaceanalysis.com/face-measurement-statistics",
+  "methodology": {
+    "url": "https://thefaceanalysis.com/methodology",
+    "lastChanged": "2026-10-16",
+    "revisions": 9,
+    "changelog": "https://thefaceanalysis.com/data/changelog.json"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "citeAs": "The Face Analysis (2026). Face Measurement Statistics 2026: 102 faces measured with MediaPipe. Updated 6 October 2026.",
+  "source": {
+    "name": "Face Research Lab London Set",
+    "citation": "DeBruine, L. & Jones, B. (2017). Face Research Lab London Set. figshare. doi:10.6084/m9.figshare.5047666.v5 (CC BY 4.0).",
+    "doi": "https://doi.org/10.6084/m9.figshare.5047666.v5",
+    "license": "CC BY 4.0"
+  },
+  "engine": {
+    "model": "MediaPipe Face Landmarker",
+    "tasksVision": "1.0.1",
+    "landmarks": 478,
+    "measuredOn": "2026-10-06"
+  },
+  "score": {
+    "composite": "0-100 weighted sum of symmetry and three golden-ratio fits",
+    "weights": {
+      "symmetry": 0.4,
+      "faceLengthToWidth": 0.2,
+      "eyeSpacingToNoseWidth": 0.2,
+      "noseLengthToMouthWidth": 0.2
+    },
+    "goldenRatio": 1.618,
+    "percentile": "mid-rank against the reference composites, clipped to 1-99",
+    "oneToTen": "1 + 9 * percentile / 100"
+  },
+  "thresholds": {
+    "faceShape": {
+      "oblongRatio": 1.229,
+      "triangleJaw": 0.794,
+      "triangleForeheadToJaw": 1.125,
+      "roundRatio": 1.16,
+      "roundJaw": 0.791,
+      "squareJaw": 0.796,
+      "squareForeheadToJaw": 1.158,
+      "heartForeheadToJaw": 1.239,
+      "diamondForehead": 0.934,
+      "diamondJaw": 0.796
+    },
+    "eye": {
+      "positiveTiltMinDeg": 5,
+      "wideSetAbove": 1.27,
+      "closeSetBelow": 1.1,
+      "hoodedFoldMax": 0.2,
+      "roundApertureMin": 0.36
+    },
+    "lip": {
+      "downturnedBelowDeg": -6.5,
+      "fullMin": 0.42,
+      "thinMax": 0.28,
+      "definedBowMin": 0.035
+    },
+    "nose": {
+      "wideRatioMin": 0.28,
+      "narrowRatioMax": 0.22,
+      "longRatioMin": 1.28,
+      "shortRatioMax": 1.15
+    },
+    "pupillaryDistance": {
+      "irisDiameterMm": 11.7,
+      "errorBandMm": 3
+    }
+  },
+  "validity": {
+    "raters": 2513,
+    "method": "Spearman correlation with the mean attractiveness rating of the same faces",
+    "results": [
+      {
+        "measure": "Overall composite score (the 1-10 score is its percentile)",
+        "rho": "−0.07",
+        "ci95": "−0.27 to +0.12",
+        "reading": "No relationship"
+      },
+      {
+        "measure": "Golden ratio fit",
+        "rho": "−0.10",
+        "ci95": "−0.28 to +0.09",
+        "reading": "No relationship"
+      },
+      {
+        "measure": "Left-right symmetry",
+        "rho": "+0.09",
+        "ci95": "−0.12 to +0.28",
+        "reading": "No relationship"
+      },
+      {
+        "measure": "Closeness to own-sex average (13 ratios)",
+        "rho": "+0.21",
+        "ci95": "+0.01 to +0.39",
+        "reading": "Weak, positive"
+      }
+    ]
+  },
+  "sample": {
+    "n": 102,
+    "female": 49,
+    "male": 53,
+    "ethnicity": {
+      "white": 69,
+      "black": 13,
+      "west_asian": 10,
+      "east_asian": 9,
+      "east_asian/white": 1
+    }
+  },
+  "measurements": {
+    "engineDate": "2026-10-06",
+    "n": 102,
+    "nFemale": 49,
+    "nMale": 53,
+    "composite": {
+      "all": {
+        "n": 102,
+        "p10": 69.8,
+        "p25": 70.8,
+        "median": 72.1,
+        "p75": 73.3,
+        "p90": 75.1,
+        "min": 68.6,
+        "max": 76.8
+      },
+      "female": {
+        "n": 49,
+        "p10": 69.7,
+        "p25": 70.1,
+        "median": 71.1,
+        "p75": 72.6,
+        "p90": 74,
+        "min": 68.6,
+        "max": 76.1
+      },
+      "male": {
+        "n": 53,
+        "p10": 70.2,
+        "p25": 71.9,
+        "median": 72.5,
+        "p75": 73.7,
+        "p90": 75.2,
+        "min": 68.6,
+        "max": 76.8
+      }
+    },
+    "symmetry": {
+      "all": {
+        "n": 102,
+        "p10": 92.4,
+        "p25": 94.4,
+        "median": 96.4,
+        "p75": 97.6,
+        "p90": 98,
+        "min": 84.7,
+        "max": 99.3
+      },
+      "female": {
+        "n": 49,
+        "p10": 92.2,
+        "p25": 93.5,
+        "median": 96.4,
+        "p75": 97.8,
+        "p90": 98.1,
+        "min": 84.7,
+        "max": 98.8
+      },
+      "male": {
+        "n": 53,
+        "p10": 93,
+        "p25": 95.3,
+        "median": 96.5,
+        "p75": 97.5,
+        "p90": 98,
+        "min": 91.3,
+        "max": 99.3
+      }
+    },
+    "golden": {
+      "all": {
+        "n": 102,
+        "p10": 52.6,
+        "p25": 54.2,
+        "median": 56.4,
+        "p75": 58.2,
+        "p90": 60.6,
+        "min": 50.8,
+        "max": 64.9
+      },
+      "female": {
+        "n": 49,
+        "p10": 52.4,
+        "p25": 53.8,
+        "median": 55.2,
+        "p75": 57.7,
+        "p90": 59.7,
+        "min": 50.8,
+        "max": 62.9
+      },
+      "male": {
+        "n": 53,
+        "p10": 53.2,
+        "p25": 55.7,
+        "median": 57.2,
+        "p75": 58.9,
+        "p90": 60.9,
+        "min": 51,
+        "max": 64.9
+      }
+    },
+    "thirds": {
+      "upperPct": {
+        "all": {
+          "n": 102,
+          "p10": 18.2,
+          "p25": 19.4,
+          "median": 20.2,
+          "p75": 21.2,
+          "p90": 22,
+          "min": 13.5,
+          "max": 22.8
+        },
+        "female": {
+          "n": 49,
+          "p10": 18.1,
+          "p25": 19,
+          "median": 20.1,
+          "p75": 21,
+          "p90": 22.1,
+          "min": 16.2,
+          "max": 22.7
+        },
+        "male": {
+          "n": 53,
+          "p10": 18.8,
+          "p25": 19.5,
+          "median": 20.6,
+          "p75": 21.3,
+          "p90": 22,
+          "min": 13.5,
+          "max": 22.8
+        }
+      },
+      "middlePct": {
+        "all": {
+          "n": 102,
+          "p10": 35.6,
+          "p25": 36.9,
+          "median": 38.3,
+          "p75": 40.3,
+          "p90": 41.2,
+          "min": 34.1,
+          "max": 43
+        },
+        "female": {
+          "n": 49,
+          "p10": 37.8,
+          "p25": 38.8,
+          "median": 40.3,
+          "p75": 41.1,
+          "p90": 42.4,
+          "min": 36.2,
+          "max": 43
+        },
+        "male": {
+          "n": 53,
+          "p10": 35.1,
+          "p25": 36.1,
+          "median": 37,
+          "p75": 38,
+          "p90": 39.2,
+          "min": 34.1,
+          "max": 42.8
+        }
+      },
+      "lowerPct": {
+        "all": {
+          "n": 102,
+          "p10": 38.3,
+          "p25": 40.2,
+          "median": 41.3,
+          "p75": 42.8,
+          "p90": 43.8,
+          "min": 35.6,
+          "max": 46.7
+        },
+        "female": {
+          "n": 49,
+          "p10": 37.6,
+          "p25": 38.6,
+          "median": 40.2,
+          "p75": 41.1,
+          "p90": 42.2,
+          "min": 35.6,
+          "max": 44.5
+        },
+        "male": {
+          "n": 53,
+          "p10": 40.5,
+          "p25": 41.4,
+          "median": 42.5,
+          "p75": 43.6,
+          "p90": 44.6,
+          "min": 39.3,
+          "max": 46.7
+        }
+      },
+      "middleToLower": {
+        "all": {
+          "n": 102,
+          "p10": 0.81,
+          "p25": 0.86,
+          "median": 0.94,
+          "p75": 1,
+          "p90": 1.07,
+          "min": 0.75,
+          "max": 1.19
+        },
+        "female": {
+          "n": 49,
+          "p10": 0.92,
+          "p25": 0.95,
+          "median": 1,
+          "p75": 1.05,
+          "p90": 1.12,
+          "min": 0.83,
+          "max": 1.19
+        },
+        "male": {
+          "n": 53,
+          "p10": 0.79,
+          "p25": 0.84,
+          "median": 0.87,
+          "p75": 0.92,
+          "p90": 0.95,
+          "min": 0.75,
+          "max": 1
+        }
+      },
+      "balanced": 0
+    },
+    "fwhr": {
+      "all": {
+        "n": 102,
+        "p10": 1.64,
+        "p25": 1.72,
+        "median": 1.78,
+        "p75": 1.86,
+        "p90": 1.95,
+        "min": 1.54,
+        "max": 2.1
+      },
+      "female": {
+        "n": 49,
+        "p10": 1.59,
+        "p25": 1.66,
+        "median": 1.72,
+        "p75": 1.84,
+        "p90": 1.88,
+        "min": 1.54,
+        "max": 2.1
+      },
+      "male": {
+        "n": 53,
+        "p10": 1.73,
+        "p25": 1.76,
+        "median": 1.82,
+        "p75": 1.91,
+        "p90": 2,
+        "min": 1.64,
+        "max": 2.06
+      }
+    },
+    "midface": {
+      "all": {
+        "n": 102,
+        "p10": 0.96,
+        "p25": 1,
+        "median": 1.06,
+        "p75": 1.1,
+        "p90": 1.15,
+        "min": 0.92,
+        "max": 1.29
+      },
+      "female": {
+        "n": 49,
+        "p10": 0.97,
+        "p25": 1.02,
+        "median": 1.07,
+        "p75": 1.1,
+        "p90": 1.15,
+        "min": 0.92,
+        "max": 1.2
+      },
+      "male": {
+        "n": 53,
+        "p10": 0.95,
+        "p25": 0.99,
+        "median": 1.06,
+        "p75": 1.1,
+        "p90": 1.15,
+        "min": 0.92,
+        "max": 1.29
+      }
+    },
+    "pd": {
+      "all": {
+        "n": 102,
+        "p10": 59.4,
+        "p25": 60.4,
+        "median": 61.9,
+        "p75": 63.6,
+        "p90": 65.1,
+        "min": 57.2,
+        "max": 68.3
+      },
+      "female": {
+        "n": 49,
+        "p10": 59,
+        "p25": 60.1,
+        "median": 61.3,
+        "p75": 62.9,
+        "p90": 64.5,
+        "min": 57.4,
+        "max": 65.9
+      },
+      "male": {
+        "n": 53,
+        "p10": 59.7,
+        "p25": 61.3,
+        "median": 62.2,
+        "p75": 64.2,
+        "p90": 66.4,
+        "min": 57.2,
+        "max": 68.3
+      }
+    },
+    "tilt": {
+      "all": {
+        "n": 102,
+        "p10": 1.3,
+        "p25": 2.1,
+        "median": 3.7,
+        "p75": 5.1,
+        "p90": 6,
+        "min": -1.7,
+        "max": 9.2
+      },
+      "female": {
+        "n": 49,
+        "p10": 2.5,
+        "p25": 2.8,
+        "median": 4.4,
+        "p75": 5.4,
+        "p90": 6.4,
+        "min": 1.5,
+        "max": 9.2
+      },
+      "male": {
+        "n": 53,
+        "p10": 0.4,
+        "p25": 1.5,
+        "median": 2.6,
+        "p75": 4.3,
+        "p90": 5.4,
+        "min": -1.7,
+        "max": 6.3
+      }
+    },
+    "hist": {
+      "tilt": {
+        "lo": -2,
+        "step": 2,
+        "bins": 6,
+        "all": [
+          4,
+          18,
+          37,
+          32,
+          10,
+          1
+        ],
+        "female": [
+          0,
+          2,
+          19,
+          19,
+          8,
+          1
+        ],
+        "male": [
+          4,
+          16,
+          18,
+          13,
+          2,
+          0
+        ]
+      },
+      "fwhr": {
+        "lo": 1.5,
+        "step": 0.1,
+        "bins": 7,
+        "all": [
+          7,
+          13,
+          38,
+          28,
+          10,
+          5,
+          1
+        ],
+        "female": [
+          7,
+          10,
+          17,
+          13,
+          1,
+          0,
+          1
+        ],
+        "male": [
+          0,
+          3,
+          21,
+          15,
+          9,
+          5,
+          0
+        ]
+      },
+      "composite": {
+        "lo": 68,
+        "step": 1,
+        "bins": 9,
+        "all": [
+          3,
+          15,
+          11,
+          21,
+          20,
+          16,
+          5,
+          7,
+          4
+        ],
+        "female": [
+          2,
+          10,
+          9,
+          14,
+          4,
+          5,
+          1,
+          3,
+          1
+        ],
+        "male": [
+          1,
+          5,
+          2,
+          7,
+          16,
+          11,
+          4,
+          4,
+          3
+        ]
+      },
+      "pd": {
+        "lo": 56,
+        "step": 2,
+        "bins": 7,
+        "all": [
+          2,
+          16,
+          33,
+          27,
+          17,
+          6,
+          1
+        ],
+        "female": [
+          1,
+          10,
+          18,
+          10,
+          10,
+          0,
+          0
+        ],
+        "male": [
+          1,
+          6,
+          15,
+          17,
+          7,
+          6,
+          1
+        ]
+      }
+    }
+  },
+  "typeCounts": {
+    "engineDate": "2026-10-06",
+    "mediapipe": "1.0.1",
+    "n": 102,
+    "nFemale": 49,
+    "nMale": 53,
+    "ethnicity": {
+      "white": 69,
+      "black": 13,
+      "west_asian": 10,
+      "east_asian": 9,
+      "east_asian/white": 1
+    },
+    "face": {
+      "labels": {
+        "all": {
+          "oval": 38,
+          "round": 13,
+          "heart": 12,
+          "square": 10,
+          "triangle": 10,
+          "oblong": 10,
+          "diamond": 9
+        },
+        "female": {
+          "oval": 24,
+          "heart": 11,
+          "oblong": 5,
+          "round": 4,
+          "diamond": 3,
+          "square": 1,
+          "triangle": 1
+        },
+        "male": {
+          "oval": 14,
+          "square": 9,
+          "triangle": 9,
+          "round": 9,
+          "diamond": 6,
+          "oblong": 5,
+          "heart": 1
+        }
+      },
+      "lengthRatio": {
+        "all": {
+          "p25": 1.153,
+          "median": 1.181,
+          "p75": 1.21
+        },
+        "female": {
+          "p25": 1.151,
+          "median": 1.191,
+          "p75": 1.217
+        },
+        "male": {
+          "p25": 1.157,
+          "median": 1.174,
+          "p75": 1.2
+        }
+      },
+      "jawRatio": {
+        "all": {
+          "p25": 0.782,
+          "median": 0.794,
+          "p75": 0.809
+        },
+        "female": {
+          "p25": 0.772,
+          "median": 0.783,
+          "p75": 0.792
+        },
+        "male": {
+          "p25": 0.795,
+          "median": 0.807,
+          "p75": 0.818
+        }
+      },
+      "foreheadRatio": {
+        "all": {
+          "p25": 0.93,
+          "median": 0.942,
+          "p75": 0.958
+        },
+        "female": {
+          "p25": 0.942,
+          "median": 0.952,
+          "p75": 0.963
+        },
+        "male": {
+          "p25": 0.923,
+          "median": 0.933,
+          "p75": 0.944
+        }
+      },
+      "foreheadToJaw": {
+        "all": {
+          "p25": 1.152,
+          "median": 1.189,
+          "p75": 1.22
+        },
+        "female": {
+          "p25": 1.198,
+          "median": 1.217,
+          "p75": 1.239
+        },
+        "male": {
+          "p25": 1.132,
+          "median": 1.156,
+          "p75": 1.181
+        }
+      }
+    },
+    "eye": {
+      "labels": {
+        "all": {
+          "almond": 49,
+          "upturned": 22,
+          "round": 14,
+          "hooded": 13,
+          "downturned": 4
+        },
+        "female": {
+          "upturned": 19,
+          "almond": 15,
+          "round": 13,
+          "hooded": 2
+        },
+        "male": {
+          "almond": 34,
+          "hooded": 11,
+          "downturned": 4,
+          "upturned": 3,
+          "round": 1
+        }
+      },
+      "tiltClass": {
+        "all": {
+          "neutral": 71,
+          "positive": 27,
+          "negative": 4
+        },
+        "female": {
+          "neutral": 30,
+          "positive": 19
+        },
+        "male": {
+          "neutral": 41,
+          "positive": 8,
+          "negative": 4
+        }
+      },
+      "spacing": {
+        "all": {
+          "average": 75,
+          "wide-set": 14,
+          "close-set": 13
+        },
+        "female": {
+          "average": 34,
+          "wide-set": 8,
+          "close-set": 7
+        },
+        "male": {
+          "average": 41,
+          "wide-set": 6,
+          "close-set": 6
+        }
+      },
+      "tilt": {
+        "all": {
+          "p25": 2.1,
+          "median": 3.7,
+          "p75": 5.1
+        },
+        "female": {
+          "p25": 2.8,
+          "median": 4.4,
+          "p75": 5.4
+        },
+        "male": {
+          "p25": 1.5,
+          "median": 2.6,
+          "p75": 4.3
+        }
+      },
+      "aperture": {
+        "all": {
+          "p25": 0.325,
+          "median": 0.347,
+          "p75": 0.365
+        },
+        "female": {
+          "p25": 0.342,
+          "median": 0.362,
+          "p75": 0.38
+        },
+        "male": {
+          "p25": 0.318,
+          "median": 0.33,
+          "p75": 0.349
+        }
+      },
+      "fold": {
+        "all": {
+          "p25": 0.218,
+          "median": 0.236,
+          "p75": 0.267
+        },
+        "female": {
+          "p25": 0.228,
+          "median": 0.249,
+          "p75": 0.291
+        },
+        "male": {
+          "p25": 0.206,
+          "median": 0.234,
+          "p75": 0.258
+        }
+      },
+      "spacingRatio": {
+        "all": {
+          "p25": 1.14,
+          "median": 1.17,
+          "p75": 1.24
+        },
+        "female": {
+          "p25": 1.14,
+          "median": 1.19,
+          "p75": 1.25
+        },
+        "male": {
+          "p25": 1.13,
+          "median": 1.17,
+          "p75": 1.23
+        }
+      }
+    },
+    "lip": {
+      "labels": {
+        "all": {
+          "average": 57,
+          "downturned": 19,
+          "thin": 12,
+          "full": 10,
+          "heart": 4
+        },
+        "female": {
+          "average": 38,
+          "full": 5,
+          "thin": 4,
+          "heart": 1,
+          "downturned": 1
+        },
+        "male": {
+          "average": 19,
+          "downturned": 18,
+          "thin": 8,
+          "full": 5,
+          "heart": 3
+        }
+      },
+      "fullnessLabel": {
+        "all": {
+          "average": 73,
+          "thin": 17,
+          "full": 12
+        },
+        "female": {
+          "average": 39,
+          "thin": 5,
+          "full": 5
+        },
+        "male": {
+          "average": 34,
+          "thin": 12,
+          "full": 7
+        }
+      },
+      "bow": {
+        "all": {
+          "soft": 98,
+          "defined": 4
+        },
+        "female": {
+          "soft": 48,
+          "defined": 1
+        },
+        "male": {
+          "soft": 50,
+          "defined": 3
+        }
+      },
+      "corners": {
+        "all": {
+          "neutral": 76,
+          "downturned": 19,
+          "upturned": 7
+        },
+        "female": {
+          "neutral": 41,
+          "upturned": 7,
+          "downturned": 1
+        },
+        "male": {
+          "neutral": 35,
+          "downturned": 18
+        }
+      },
+      "fullness": {
+        "all": {
+          "p25": 0.299,
+          "median": 0.339,
+          "p75": 0.392
+        },
+        "female": {
+          "p25": 0.319,
+          "median": 0.345,
+          "p75": 0.401
+        },
+        "male": {
+          "p25": 0.293,
+          "median": 0.32,
+          "p75": 0.381
+        }
+      },
+      "bowDepth": {
+        "all": {
+          "p25": 0.028,
+          "median": 0.03,
+          "p75": 0.032
+        },
+        "female": {
+          "p25": 0.028,
+          "median": 0.03,
+          "p75": 0.032
+        },
+        "male": {
+          "p25": 0.028,
+          "median": 0.03,
+          "p75": 0.032
+        }
+      },
+      "cornerAngle": {
+        "all": {
+          "p25": -5.4,
+          "median": -3,
+          "p75": -1.2
+        },
+        "female": {
+          "p25": -3.5,
+          "median": -2,
+          "p75": 0.6
+        },
+        "male": {
+          "p25": -6.8,
+          "median": -4,
+          "p75": -1.6
+        }
+      },
+      "widthRatio": {
+        "all": {
+          "p25": 0.293,
+          "median": 0.304,
+          "p75": 0.315
+        },
+        "female": {
+          "p25": 0.293,
+          "median": 0.302,
+          "p75": 0.317
+        },
+        "male": {
+          "p25": 0.293,
+          "median": 0.304,
+          "p75": 0.313
+        }
+      }
+    },
+    "nose": {
+      "width": {
+        "all": {
+          "average": 90,
+          "wide": 11,
+          "narrow": 1
+        },
+        "female": {
+          "average": 44,
+          "wide": 4,
+          "narrow": 1
+        },
+        "male": {
+          "average": 46,
+          "wide": 7
+        }
+      },
+      "length": {
+        "all": {
+          "short": 48,
+          "average": 37,
+          "long": 17
+        },
+        "female": {
+          "average": 23,
+          "long": 16,
+          "short": 10
+        },
+        "male": {
+          "short": 38,
+          "average": 14,
+          "long": 1
+        }
+      },
+      "wideAndLong": {
+        "all": {
+          "no": 102
+        },
+        "female": {
+          "no": 49
+        },
+        "male": {
+          "no": 53
+        }
+      },
+      "widthRatio": {
+        "all": {
+          "p25": 0.24,
+          "median": 0.25,
+          "p75": 0.26
+        },
+        "female": {
+          "p25": 0.24,
+          "median": 0.25,
+          "p75": 0.26
+        },
+        "male": {
+          "p25": 0.24,
+          "median": 0.25,
+          "p75": 0.26
+        }
+      },
+      "lengthRatio": {
+        "all": {
+          "p25": 1.09,
+          "median": 1.17,
+          "p75": 1.24
+        },
+        "female": {
+          "p25": 1.17,
+          "median": 1.23,
+          "p75": 1.29
+        },
+        "male": {
+          "p25": 1.04,
+          "median": 1.11,
+          "p75": 1.18
+        }
+      },
+      "canonRatio": {
+        "all": {
+          "p25": 1.02,
+          "median": 1.075,
+          "p75": 1.14
+        },
+        "female": {
+          "p25": 1,
+          "median": 1.04,
+          "p75": 1.09
+        },
+        "male": {
+          "p25": 1.07,
+          "median": 1.1,
+          "p75": 1.15
+        }
+      }
+    }
+  },
+  "notes": [
+    "Photos: the 102 neutral, front-facing photos of the Face Research Lab London Set (DeBruine & Jones, 2017, CC BY 4.0): 49 women and 53 men, adults photographed under the same conditions in London in April 2012, 69 of them white. The set also includes 2,513 people's attractiveness ratings of every face.",
+    "Measurement: on 6 October 2026 we ran the site's own code, the same MediaPipe Face Landmarker (478 points) and the same functions that measure a visitor's photo, on every photo. Counts say how many faces got each reading; medians and ranges describe all 102. No per-face value and no photo is published here.",
+    "Thresholds: the face shape cut-offs, the downturned-lip cut-off, the wide-set and close-set eye cut-offs and the long-nose cut-off were chosen from this set's own percentiles. For those readings the split shows how the detector divides faces, not how common a type is. The other thresholds are conventions set before this measurement.",
+    "Limits: 102 people photographed in one city in one month describe these faces, not a population, so no count here is a prevalence and no median is a norm. We make no accuracy claim for any label; a different photo of the same person can move a borderline reading."
+  ]
+}
