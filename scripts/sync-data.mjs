@@ -1,8 +1,9 @@
 // Refreshes ./data from the sibling thefaceanalysis-data checkout when there is one.
 // Standalone clones keep the committed snapshot, so `npm run build` works without it.
-import { cpSync, existsSync, mkdirSync } from "node:fs";
-const source = new URL("../../data/reference-set.json", import.meta.url);
-if (existsSync(source)) {
+import { copyFileSync, existsSync, mkdirSync } from "node:fs";
+const FILES = ["reference-set.json", "types.json", "changelog.json", "face-measurements.csv"];
+const from = (f) => new URL(`../../data/${f}`, import.meta.url);
+if (existsSync(from(FILES[0]))) {
   mkdirSync(new URL("../data", import.meta.url), { recursive: true });
-  cpSync(new URL("../../data", import.meta.url), new URL("../data", import.meta.url), { recursive: true, filter: (p) => !/node_modules|\.git/.test(p) });
+  for (const f of FILES) copyFileSync(from(f), new URL(`../data/${f}`, import.meta.url));
 }
