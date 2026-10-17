@@ -3,21 +3,46 @@
   "version": "0.1.0",
   "description": "MCP server for The Face Analysis: face measurement statistics, face/eye/lip/nose types, methodology and a face shape classifier, from Claude, Cursor, ChatGPT or any MCP client.",
   "type": "module",
-  "bin": { "thefaceanalysis-mcp": "dist/stdio.js" },
+  "bin": {
+    "thefaceanalysis-mcp": "dist/stdio.js"
+  },
   "main": "./dist/server.js",
   "scripts": {
     "sync": "node scripts/sync-data.mjs",
     "build": "npm run sync && tsc",
     "start": "node dist/stdio.js",
     "start:http": "node dist/http.js",
-    "test": "npm run build && node scripts/test.mjs"
+    "test": "npm run build && node scripts/test.mjs",
+    "prepublishOnly": "npm run build"
   },
-  "files": ["dist", "data"],
-  "engines": { "node": ">=18" },
-  "repository": { "type": "git", "url": "git+https://github.com/The-Face-Analysis/thefaceanalysis-mcp.git" },
+  "files": [
+    "dist",
+    "data"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Face-Analysis/thefaceanalysis-mcp.git"
+  },
   "homepage": "https://thefaceanalysis.com/mcp",
-  "keywords": ["mcp", "model-context-protocol", "face-analysis", "face-shape", "fwhr", "facial-measurements", "claude"],
-  "dependencies": { "@modelcontextprotocol/sdk": "^1.32.1", "zod": "^3.25.0" },
-  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.6.0" },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "face-analysis",
+    "face-shape",
+    "fwhr",
+    "facial-measurements",
+    "claude"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
   "license": "MIT"
 }
